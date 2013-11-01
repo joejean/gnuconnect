@@ -1,0 +1,52 @@
+/*  Modifying Bootstrap   <begin>*/
+.navbar-static-top {
+	background-color: #56138F; /*#2C3747;*/
+	padding: 0;
+	margin-top: -20px;
+	margin-bottom: 0;
+	border-bottom: none;
+}
+.navbar-wrapper .navbar {
+	border-radius: 0px;
+}
+.navbar .nav > li > a {
+	color: #AAAAAA;
+	background: inherit;
+}
+.navbar .nav > li > a:hover, .navbar .nav > li > a:active {
+	color: #FFFFFF;
+	background: inherit;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+	background-color: #EFEFEF;
+	color: #1C1C1C;
+}
+/*  Modifying Bootstrap   <end>*/
+
+/*  Custom  */
+.default-color {
+	color: #FFFFFF;
+}
+
+/* home contents */
+.home-contents{
+	height: 900px;  /* the actual value is "auto" */
+	
+}
+
+/* footer */
+.footer {
+	color: #FFFFFF;
+	width: 100%;
+	height: 40px;
+	background-color: #56138F;
+	padding: 10px;
+}
+.footer-txt, .footer-txt a {
+	color: #AAAAAA;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.footer-txt a:hover {
+	color: #FFFFFF;
+}

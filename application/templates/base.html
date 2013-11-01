@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="ico/favicon.png">
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="/assets/css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/assets/js/html5shiv.js"></script>
+      <script src="/assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="/assets/css/carousel.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar-wrapper">
+        <div class="navbar navbar-default navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><span class="default-color">GNUConnect</span></a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                {% block navbar_items %}{% endblock %}
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    {% block content %}{% endblock %}
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+    	<div class="container">
+        <p>
+          {% block footer_custom_items %}{% endblock %}
+        	<span class="footer-txt"><a href="#">Privacy Statement</a></span>&middot;
+        	<span class="footer-txt"><a href="#">Terms and Conditions</a></span>
+        </p>
+    </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript  -->
+    <script src="/assets/js/jquery-1.10.2.min.js"></script>
+    <script src="/assets/js/bootstrap.js"></script>
+    <script src="/assets/js/holder.js"></script>
+  </body>
+</html>
