@@ -30,7 +30,22 @@ from application import views
 app.add_url_rule('/home', 'home', view_func=views.home)
 
 # Newsfeed page
-app.add_url_rule('/newsfeed', 'newsfeed', view_func=views.newsfeed)
+app.add_url_rule('/profile', 'profile', view_func=views.profile)
+
+# Privacy statements page
+app.add_url_rule('/privacy', 'privacy', view_func=views.privacy)
+
+# Terms and conditions page
+app.add_url_rule('/terms', 'terms', view_func=views.terms)
+
+# About GNUConnect page
+app.add_url_rule('/about', 'about', view_func=views.about)
+
+# Sign up page
+app.add_url_rule('/register', 'register', view_func=views.register)
+
+# Login page
+app.add_url_rule('/login', 'login', view_func=views.login)
 
 # Landing page
 app.add_url_rule('/', '*', view_func=views.index)

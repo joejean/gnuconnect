@@ -47,7 +47,25 @@ def home():
     return render_template('home.html')
 
 #	Newsfeed page for a user
-def newsfeed():
-    return render_template('newsfeed.html')
+def profile():
+    return render_template('profile.html')
 
+#   Privacy statements page for the website
+def terms():
+    return render_template('terms.html')
 
+#   Terms and conditions page for the website
+def privacy():
+    return render_template('privacy.html')
+
+#   About GNUConnect page for the website
+def about():
+    return render_template('about.html')
+
+#   Registration page for the website
+def register():
+    return render_template('register.html')
+
+#   Login page for the website
+def login():
+    return render_template('login.html')
