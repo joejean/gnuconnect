@@ -24,7 +24,7 @@ def inject_profiler():
 import urls
 
 # Flask-DebugToolbar (only enabled when DEBUG=True)
-# toolbar = DebugToolbarExtension(app)
+#toolbar = DebugToolbarExtension(app)
 
 # Werkzeug Debugger (only enabled when DEBUG=True)
 if app.debug:
