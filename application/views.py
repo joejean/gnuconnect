@@ -23,15 +23,46 @@ For example the *say_hello* handler, handling the URL route '/hello/<username>',
 from google.appengine.api import users
 from google.appengine.runtime.apiproxy_errors import CapabilityDisabledError
 
-from flask import render_template
+from flask import render_template, redirect, url_for, g, request
 
 from flask_cache import Cache
 
 from application import app
 
+from functools import wraps
 
 # Flask-Cache (configured to use App Engine Memcache API)
 cache = Cache(app)
+
+#Things that are executed before each request.
+@app.before_request
+def before_request():
+    #put the current user in the global g
+    g.user = users.get_current_user()
+
+    #put the logout url in the global g
+    g.logout = users.create_logout_url('/')
+
+    #put the login url in the global g. 
+    g.login = users.create_login_url('home') 
+
+    
+##
+##      DECORATORS
+##
+
+
+#       login_required decorator
+
+def login_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        login_url = users.create_login_url(request.url)
+        if g.user is None:
+            return redirect(login_url)
+        return f(*args, **kwargs)
+    return decorated_function
+
 
 
 ##
@@ -40,15 +71,21 @@ cache = Cache(app)
 
 #	A public landing page
 def index():
-    return render_template('index.html')
+    
+    if g.user:
+        return render_template('home.html', user=g.user)
+    else:
+        return render_template('index.html')
 
 #	Home page for a user after a successful login
+
+@login_required
 def home():
-    return render_template('home.html')
+    return render_template('home.html', user = g.user)
 
 #	Newsfeed page for a user
 def profile():
-    return render_template('profile.html')
+    return render_template('profile.html', user = g.user)
 
 #   Privacy statements page for the website
 def terms():
