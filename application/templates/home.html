@@ -12,28 +12,30 @@
 {% block content %}
  <div class="container home-contents">
  	<div id="page" class="row">
+ 		<!-- Menu items -->
 	    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 cont-menu squeeze">
 	    	<!-- Profile picture's menu group -->
-	    	<div class="col-xs-4 col-sm-12 col-md-12 col-lg-12 menu-profile">
+	    	<div class="col-xs-4 col-sm-12 col-md-12 col-lg-12 menu-profile squeeze">
+	    		<!-- Profile picture -->
 	    		<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 menu-me squeeze">
 		    		<img src="/assets/img/sample_profile_pic.gif" alt="..." class="img-rounded profile-pic">
 		    	</div>
-		    	<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 menu-me">
+		    	<!-- Notifications' menu item -->
+		    	<div class="col-xs-11 col-sm-4 col-md-4 col-lg-4 menu-me squeeze">
 		    		<div class="menu-item item-notifications">
 		    			
 		    		</div>
 		    	</div>
-	    		<!-- Notifications' menu item -->
-	    		
 	    	</div>
+	    	<div class="hidden-xs col-sm-4 col-md-4 col-lg-4 menu-separator "> </div>
 	    	<!-- Projects' menu group -->
 	    	<div class="col-xs-4 col-sm-12 col-md-12 col-lg-12 menu-projects">
-	    		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 menu-me">
+	    		<div class="col-xs-6 col-sm-8 col-md-8 col-lg-8 menu-me">
 		    		<div class="menu-item item-me">
 		    			
 		    		</div>
 		    	</div>
-		    	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 menu-others">
+		    	<div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 menu-others">
 		    		<div class="menu-item item-others">
 		    			
 		    		</div>
@@ -42,14 +44,14 @@
 		    		</div>
 		    	</div>
 	    	</div>
-	    	<!-- Skills' menu group -->
-	    	<div class="col-xs-4 col-sm-12 col-md-12 col-lg-12 menu-skills">
-	    		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 menu-me">
+	    	<!-- Events' menu group -->
+	    	<div class="col-xs-4 col-sm-12 col-md-12 col-lg-12 menu-events">
+	    		<div class="col-xs-6 col-sm-8 col-md-8 col-lg-8 menu-me ">
 		    		<div class="menu-item item-me">
 		    			
 		    		</div>
 		    	</div>
-		    	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 menu-others">
+		    	<div class="col-xs-6 col-sm-4 col-md-4 col-lg-4  menu-others">
 		    		<div class="menu-item item-others">
 		    			
 		    		</div>
@@ -59,8 +61,36 @@
 		    	</div>
 	    	</div>
 	    </div>
-	    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 contents squeeze">
-	    	
+	    <!-- Home contents -->
+	    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 contents">
+	    	<!-- Options and Search items -->
+	    	<div class="contents-top">
+	    		<!-- Options -->
+	    		<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 pull-left squeeze">
+	    			<select class="form-control curve-corners cont-select pull-right">
+	    				<option value="all">All</option>
+	    				<option value="value1">All</option>
+	    				<option value="value1">Value 1</option>
+	    				<option value="value2">Value 2</option>
+	    				<option value="value3">Value 3</option>
+	    				<option value="value4">Value 4</option>
+	    				<option value="value5">Value 5</option>
+	    				<option value="value6">Value 6</option>
+	    			</select>
+	    		</div>
+	    		<!-- Search -->
+	    		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right curve-corners cont-search container squeeze">
+	    			<form class="navbar-form input-sm hidden-xs squeeze" role="search">
+						<div class="search-cont squeeze">
+							<input type="text" class="form-control my-search" placeholder="Search">
+						</div>
+						<button id="search-btn" type="submit" class="glyphicon glyphicon-search squeeze" tabindex="0"\> </button>
+					</form>
+	    		</div>
+	    	</div>
+	    	<div class="contents-items container">
+	    		
+	    	</div>
 	    </div>
 	</div>
  </div>
