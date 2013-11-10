@@ -21,6 +21,9 @@
 	background-color: #EFEFEF;
 	color: #1C1C1C;
 }
+.panel-heading{
+	height: 60px !important;
+}
 /*  Modifying Bootstrap   <end>*/
 
 /*  Custom  */
@@ -45,6 +48,21 @@
 	border-right: 1px solid #919191;
 	border-left: 1px solid #919191;
 }
+.contents-head{
+	margin-bottom: 30px;
+}
+.contents-body{
+
+}
+.project-sidebar{
+	width: 5px;
+	height: 60px !important;
+	background-color: #EF5D22;
+	float: left;
+}
+.project-title{
+	max-width: 70% !important;
+}
 .cont-menu {
 	margin-top: 50px;
 	height: auto;
@@ -54,6 +72,8 @@
 }
 .onagreen {
 	border: 1px solid green;
+}.contents-items{
+	float: left;
 }
 .profile-pic {
 	max-height: 90%;
@@ -94,7 +114,34 @@
 .menu-separator {
 	height: 50px;
 }
-
+.join-btn{
+	margin-top: 10px;
+	margin-right: 10px;
+	padding-left: 5px;
+	padding-top: 0px;
+	height: 30px;
+	width: 30px;
+	border-color: #919191;
+}
+.project-pic{
+	margin-top: -10px;
+	margin-right: 10px;
+	max-height: 60px;
+	max-width: 70px;
+	float: left;
+}
+.bg-notification{
+	background-color: #39ABE1;
+}
+.bg{
+	background-color: #39ABE1;
+}
+.bg-notification{
+	background-color: #39ABE1;
+}
+.bg-notification{
+	background-color: #39ABE1;
+}
 /*  search and options */
 .search-cont {
 	width: 75%;

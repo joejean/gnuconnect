@@ -13,7 +13,7 @@
  <div class="container home-contents">
  	<div id="page" class="row">
  		<!-- Menu items -->
-	    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 cont-menu squeeze">
+	    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 container cont-menu squeeze">
 	    	<!-- Profile picture's menu group -->
 	    	<div class="col-xs-4 col-sm-12 col-md-12 col-lg-12 menu-profile squeeze">
 	    		<!-- Profile picture -->
@@ -64,32 +64,55 @@
 	    <!-- Home contents -->
 	    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 contents">
 	    	<!-- Options and Search items -->
-	    	<div class="contents-top">
-	    		<!-- Options -->
-	    		<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 pull-left squeeze">
-	    			<select class="form-control curve-corners cont-select pull-right">
-	    				<option value="all">All</option>
-	    				<option value="value1">All</option>
-	    				<option value="value1">Value 1</option>
-	    				<option value="value2">Value 2</option>
-	    				<option value="value3">Value 3</option>
-	    				<option value="value4">Value 4</option>
-	    				<option value="value5">Value 5</option>
-	    				<option value="value6">Value 6</option>
-	    			</select>
-	    		</div>
-	    		<!-- Search -->
-	    		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pull-right curve-corners cont-search container squeeze">
-	    			<form class="navbar-form input-sm hidden-xs squeeze" role="search">
-						<div class="search-cont squeeze">
-							<input type="text" class="form-control my-search" placeholder="Search">
+	    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 container contents-head">
+		    	<div class="contents-top">
+		    		<!-- Options -->
+		    		<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 pull-left squeeze">
+		    			<select class="form-control curve-corners cont-select pull-right">
+		    				<option value="all">All</option>
+		    				<option value="value1">All</option>
+		    				<option value="value1">Value 1</option>
+		    				<option value="value2">Value 2</option>
+		    				<option value="value3">Value 3</option>
+		    				<option value="value4">Value 4</option>
+		    				<option value="value5">Value 5</option>
+		    				<option value="value6">Value 6</option>
+		    			</select>
+		    		</div>
+		    		<!-- Search -->
+		    		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 hidden-xs pull-right curve-corners cont-search container squeeze">
+		    			<form class="navbar-form input-sm squeeze" role="search">
+							<div class="search-cont squeeze">
+								<input type="text" class="form-control my-search" placeholder="Search">
+							</div>
+							<button id="search-btn" type="submit" class="glyphicon glyphicon-search squeeze" tabindex="0"\> </button>
+						</form>
+		    		</div>
+		    	</div>
+		    </div>
+    		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contents-body squeeze container">
+    			
+    		<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="project-sidebar"> </div>
+					<a href="#">
+						<div class="join-btn curve-corners onared pull-right" data-toggle="tooltip" title="Click to join this project"><i id="search-btn" class="glyphicon glyphicon-plus squeeze"> </i></div>
+					</a>						
+					<div class="panel-heading">
+						<img src="/assets/img/sample_profile_pic.gif" alt="..." class="img-rounded project-pic">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+								<span class="project-title" data-toggle="tooltip" title="Click to read more descriptions">SOME TITLE FOR THE PROJECT</span>
+							</a>
+						</h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse out">
+						<div class="panel-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 						</div>
-						<button id="search-btn" type="submit" class="glyphicon glyphicon-search squeeze" tabindex="0"\> </button>
-					</form>
-	    		</div>
-	    	</div>
-	    	<div class="contents-items container">
-	    		
+					</div>
+				</div>
+    		</div>
 	    	</div>
 	    </div>
 	</div>
