@@ -12,9 +12,48 @@
 
 {# The body contents of the page #}
 {% block content %}
-  <div class="container home-contents">
-    
-  </div>
+	<div class="container profile-contents">
+		<!-- Profile top -->
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 container squeeze profile-top">
+			<!-- Photo -->
+			<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 squeeze">
+				<a href="#">
+		    		<img src="/assets/img/sample_profile_pic.gif" alt="..." class="img-rounded profile-pic">
+		    	</a>
+			</div>
+			<!-- Personal Info -->
+			<div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 squeeze profile-info">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 profile-name squeeze">
+					<span>
+						Benny Lu
+					</span>
+					<a href="#" class="pull-right" data-toggle="tooltip" title="Edit personal information"><span>edit</span></a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 profile-about-me squeeze">
+					<span>
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin...
+						<a href="#" data-toggle="tooltip" title="Read more about me">More</a>
+					</span>
+				</div>
+			</div>
+			
+			<!-- Connected to -->
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 squeeze profile-connected">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 profile-connected-title">
+					<span>Connected To:</span>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 profile-connected-body">
+					<span><a href="#" data-toggle="tooltip" title="Visit Joe's profile">Joe Jean</a></span>
+					<span><a href="#" data-toggle="tooltip" title="Visit Seung's profile">Seung Man Oh</a></span>
+					<span><a href="#" data-toggle="tooltip" title="Visit Derara's profile">Derara Hailegeorgis</a></span>
+					<span><a href="#" data-toggle="tooltip" title="Visit Francis' profile">Francis Sowani</a></span>
+					<span><a href="#" data-toggle="tooltip" title="Visit Yinkal's profile">Yinkal Abe</a></span>
+				</div>
+			</div>
+		</div>
+		<!-- Profile body -->
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 container squeeze profile-body">
+	</div>
 {% endblock %}
 
 	 
