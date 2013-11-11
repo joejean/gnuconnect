@@ -46,7 +46,7 @@
 .contents {
 	padding-top: 20px;
 	height: auto;
-	min-height: 800px;
+	min-height: 600px;
 	border-right: 1px solid #919191;
 	border-left: 1px solid #919191;
 }
@@ -159,6 +159,16 @@
 }
 .bg-event-others-search{
 	background-color: #D6DF2A;
+}
+.arrow-left {
+	position: absolute;
+	margin-left: -25px !important;
+	margin-top: 202px !important;
+	width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent; 
+	border-right:10px solid #919191; 
 }
 
 /*  search and options */
