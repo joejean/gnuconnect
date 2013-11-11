@@ -41,8 +41,11 @@
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-right">
 				{% if g.user %}
+				 <li><a href="/notifications"><span>Notifications</span></a></li>
+				 <li><a href="/home"><span>Projects &amp; Events</span></a></li>
+				 <li><a href="/profile"><span>My Profile</span></a></li>
+				 <li><a href="/about"><span>About Us</span></a></li>
 				 <li><a href="{{g.logout}}"><span>Logout</span></a></li>
-				 <li><a href="/about"><span>About GNUConnect</span></a></li>
 				{% else %}
 				<li><a href="{{g.login}}"><span>Login</span></a></li>
 				<li><a href="/about"><span>About GNUConnect</span></a></li>

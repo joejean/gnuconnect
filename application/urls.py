@@ -29,8 +29,11 @@ from application import views
 # Home page
 app.add_url_rule('/home', 'home', view_func=views.home)
 
-# Newsfeed page
+# Profile page
 app.add_url_rule('/profile', 'profile', view_func=views.profile)
+
+# Notifications page
+app.add_url_rule('/notifications', 'notifications', view_func=views.notifications)
 
 # Privacy statements page
 app.add_url_rule('/privacy', 'privacy', view_func=views.privacy)
@@ -43,9 +46,6 @@ app.add_url_rule('/about', 'about', view_func=views.about)
 
 # Sign up page
 app.add_url_rule('/register', 'register', view_func=views.register)
-
-# Login page
-app.add_url_rule('/login', 'login', view_func=views.login)
 
 # Landing page
 app.add_url_rule('/', '*', view_func=views.index)

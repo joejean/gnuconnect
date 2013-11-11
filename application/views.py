@@ -78,14 +78,19 @@ def index():
         return render_template('index.html')
 
 #	Home page for a user after a successful login
-
 @login_required
 def home():
     return render_template('home.html', user = g.user)
 
-#	Newsfeed page for a user
+#	Profile page for a user
+@login_required
 def profile():
     return render_template('profile.html', user = g.user)
+
+#   Notifications page for a user
+@login_required
+def notifications():
+    return render_template('notifications.html', user = g.user)
 
 #   Privacy statements page for the website
 def terms():
@@ -103,6 +108,3 @@ def about():
 def register():
     return render_template('register.html')
 
-#   Login page for the website
-def login():
-    return render_template('login.html')
