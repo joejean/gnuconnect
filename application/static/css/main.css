@@ -45,7 +45,8 @@
 }
 .contents {
 	padding-top: 20px;
-	height: 900px;
+	height: auto;
+	min-height: 800px;
 	border-right: 1px solid #919191;
 	border-left: 1px solid #919191;
 }
