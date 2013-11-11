@@ -68,12 +68,19 @@
 	margin-top: 50px;
 	height: auto;
 }
+
+/* for debugging starts*/
+.show{
+	height: 400px;
+}
 .onared {
 	border: 1px solid red;
 }
 .onagreen {
 	border: 1px solid green;
-}.contents-items{
+}
+/* for debugging ends */
+.contents-items{
 	float: left;
 }
 .home-pic {
@@ -256,7 +263,7 @@
 	margin-bottom: 10px;
 	display: inline-block
 }
-.profile-connected-body span a{
+.link{
 	color:#343434;
 }
 .profile-body{
