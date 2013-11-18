@@ -79,7 +79,7 @@ def index():
 
 #	Home page for a user after a successful login
 @login_required
-def home():
+def home(page=""):
     return render_template('home.html', user = g.user)
 
 #	Profile page for a user

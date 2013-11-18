@@ -17,7 +17,7 @@
 	    	<!-- Profile picture's menu group -->
 	    	<div class="col-xs-4 col-sm-12 col-md-12 col-lg-12 menu-profile squeeze">
 	    		<a href="#">
-	    			<img src="/assets/img/sample_profile_pic.gif" alt="..." class="img-rounded home-pic">
+	    			<img src="/assets/img/sample_profile_pic.gif" alt="..." class="img-rounded home-pic flat">
 	    		</a>
 	    	</div>
 	    	<div class="hidden-xs col-sm-4 col-md-4 col-lg-4 menu-separator "> </div>
@@ -27,19 +27,19 @@
 	    			<span class=" txt-blue">Projects</span>
 	    		</div>
 	    		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 menu-me">
-	    			<a href="#">
+	    			<a href="/projects/recent">
 		    			<div class="menu-item item-me bg-project-me" data-toggle="tooltip" title="Some description goes here">
 		    			
 		    			</div>
 		    		</a>
 		    	</div>
 		    	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 menu-others">
-		    		<a href="#">
+		    		<a href="/projects/add">
 			    		<div class="menu-item item-others bg-project-recent" data-toggle="tooltip" title="Some description goes here">
 			    			
 			    		</div>
 			    	</a>
-			    	<a href="#">
+			    	<a href="/projects/search">
 			    		<div class="menu-item item-others bg-project-add" data-toggle="tooltip" title="Some description goes here">
 			    			
 			    		</div>
@@ -52,19 +52,19 @@
 	    			<span class="txt-green">Events</span>
 	    		</div>
 	    		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 menu-me">
-	    			<a href="#">
+	    			<a href="/events/recent">
 			    		<div class="menu-item item-me bg-event-me" data-toggle="tooltip" title="Some description goes here">
 			    			
 			    		</div>
 			    	</a>
 		    	</div>
 		    	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6  menu-others">
-		    		<a href="#">
+		    		<a href="/events/add">
 			    		<div class="menu-item item-others bg-event-recent" data-toggle="tooltip" title="Some description goes here">
 			    			
 			    		</div>
 			    	</a>
-			    	<a href="#">
+			    	<a href="/events/search">
 			    		<div class="menu-item item-others bg-event-add" data-toggle="tooltip" title="Some description goes here">
 			    			
 			    		</div>
@@ -101,26 +101,36 @@
 		    		</div>
 		    	</div>
 		    </div>
+		    <!-- DEBUG STARTS -->
 		    <!-- Sample project item 1 -->
     		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contents-body squeeze container">
 	    		<div class="panel-group" id="accordion-1">
 					<div class="panel panel-default">
 						<div class="project-sidebar bg-project-recent"> </div>
-						<a href="#">
-							<div class="join-btn curve-corners onared pull-right" data-toggle="tooltip" title="Click to join this project"><i id="search-btn" class="glyphicon glyphicon-plus squeeze"> </i></div>
-						</a>						
+						<!-- curve-corners  -->
+						<div class="categories pull-right squeeze" >
+							<div class="category-item curve-corners cat-1" data-toggle="tooltip" title="Category 1"> </div>
+							<div class="category-item curve-corners cat-2" data-toggle="tooltip" title="Category 2"> </div>
+							<div class="category-item curve-corners cat-3" data-toggle="tooltip" title="Category 3"> </div>
+							<div class="category-item curve-corners cat-4" data-toggle="tooltip" title="Category 4"> </div>
+							<div class="category-item curve-corners cat-5" data-toggle="tooltip" title="Category 5"> </div>
+							<div class="category-item curve-corners cat-6" data-toggle="tooltip" title="Category 6"> </div>
+						</div>
 						<div class="panel-heading">
-							<img src="/assets/img/sample_project_pic.gif" alt="..." class="img-rounded project-pic">
+							<img src="/assets/img/sample_project_pic.gif" alt="..." class="img-rounded project-pic flat">
 							<h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion-1" href="#collapse-1">
-									<span class="project-title" data-toggle="tooltip" title="Click to read more descriptions">PROJECT WITH LARGE PHOTO</span>
+									<span class="project-title" data-toggle="tooltip" title="Click to read more descriptions">PROJECT WITH PHOTO</span>
 								</a>
 							</h4>
 						</div>
 						<div id="collapse-1" class="panel-collapse collapse out">
 							<div class="panel-body">
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 project-title-inner">
+									<span>PROJECT WITH PHOTO</span>
+								</div>
 								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-									<img src="/assets/img/sample_project_pic.gif" alt="..." class="img-rounded project-body-pic">
+									<img src="/assets/img/sample_project_pic.gif" alt="..." class="img-rounded project-body-pic flat">
 								</div>
 								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 							</div>
@@ -129,25 +139,30 @@
 	    		</div>
 	    	</div>
 	    	<!-- Sample project item 2 -->
-	    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contents-body squeeze container">
+    		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contents-body squeeze container">
 	    		<div class="panel-group" id="accordion-2">
 					<div class="panel panel-default">
 						<div class="project-sidebar bg-project-recent"> </div>
-						<a href="#">
-							<div class="join-btn curve-corners onared pull-right" data-toggle="tooltip" title="Click to join this project"><i id="search-btn" class="glyphicon glyphicon-plus squeeze"> </i></div>
-						</a>						
+						<!-- curve-corners  -->
+						<div class="categories pull-right squeeze" >
+							<div class="category-item curve-corners cat-1" data-toggle="tooltip" title="Category 1"> </div>
+							<div class="category-item curve-corners cat-2" data-toggle="tooltip" title="Category 2"> </div>
+						</div>
 						<div class="panel-heading">
-							<img src="/assets/img/sample_profile_pic.gif" alt="..." class="img-rounded project-pic">
+							<img src="/assets/img/sample_project_pic.gif" alt="..." class="img-rounded project-pic flat">
 							<h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion-2" href="#collapse-2">
-									<span class="project-title" data-toggle="tooltip" title="Click to read more descriptions">PROJECT WITH SMALL PHOTO</span>
+									<span class="project-title" data-toggle="tooltip" title="Click to read more descriptions">PROJECT WITH PHOTO</span>
 								</a>
 							</h4>
 						</div>
 						<div id="collapse-2" class="panel-collapse collapse out">
 							<div class="panel-body">
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 project-title-inner">
+									<span>PROJECT WITH PHOTO</span>
+								</div>
 								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-									<img src="/assets/img/sample_profile_pic.gif" alt="..." class="img-rounded project-body-pic">
+									<img src="/assets/img/sample_project_pic.gif" alt="..." class="img-rounded project-body-pic flat">
 								</div>
 								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 							</div>
@@ -156,13 +171,20 @@
 	    		</div>
 	    	</div>
 	    	<!-- Sample project item 3 -->
-	    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contents-body squeeze container">
+    		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contents-body squeeze container">
 	    		<div class="panel-group" id="accordion-3">
 					<div class="panel panel-default">
 						<div class="project-sidebar bg-project-recent"> </div>
-						<a href="#">
-							<div class="join-btn curve-corners onared pull-right" data-toggle="tooltip" title="Click to join this project"><i id="search-btn" class="glyphicon glyphicon-plus squeeze"> </i></div>
-						</a>						
+						<!-- curve-corners  -->
+						<div class="categories pull-right squeeze" >
+							<div class="category-item curve-corners cat-1" data-toggle="tooltip" title="Category 1"> </div>
+							<div class="category-item curve-corners cat-2" data-toggle="tooltip" title="Category 2"> </div>
+							<div class="category-item curve-corners cat-3" data-toggle="tooltip" title="Category 3"> </div>
+							<div class="category-item curve-corners cat-4" data-toggle="tooltip" title="Category 4"> </div>
+							<div class="category-item curve-corners cat-5" data-toggle="tooltip" title="Category 5"> </div>
+							<div class="category-item curve-corners cat-6" data-toggle="tooltip" title="Category 6"> </div>		
+							<div class="category-item curve-corners cat-7" data-toggle="tooltip" title="Category 7"> </div>						
+						</div>
 						<div class="panel-heading">
 							<h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion-3" href="#collapse-3">
@@ -172,7 +194,8 @@
 						</div>
 						<div id="collapse-3" class="panel-collapse collapse out">
 							<div class="panel-body">
-								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 project-title-inner">
+									<span>PROJECT WITH NO PHOTO</span>
 								</div>
 								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 							</div>
@@ -182,24 +205,32 @@
 	    	</div>
 	    	<!-- Sample project item 4 -->
     		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contents-body squeeze container">
-	    		<div class="panel-group" id="accordion-4">
+	    		<div class="panel-group" id="accordion-1">
 					<div class="panel panel-default">
 						<div class="project-sidebar bg-project-recent"> </div>
-						<a href="#">
-							<div class="join-btn curve-corners onared pull-right" data-toggle="tooltip" title="Click to join this project"><i id="search-btn" class="glyphicon glyphicon-plus squeeze"> </i></div>
-						</a>						
+						<!-- curve-corners  -->
+						<div class="categories pull-right squeeze" >
+							<div class="category-item curve-corners cat-1" data-toggle="tooltip" title="Category 1"> </div>
+							<div class="category-item curve-corners cat-2" data-toggle="tooltip" title="Category 2"> </div>
+							<div class="category-item curve-corners cat-3" data-toggle="tooltip" title="Category 3"> </div>
+							<div class="category-item curve-corners cat-4" data-toggle="tooltip" title="Category 4"> </div>
+							<div class="category-item curve-corners cat-5" data-toggle="tooltip" title="Category 5"> </div>
+						</div>
 						<div class="panel-heading">
-							<img src="/assets/img/sample_project_pic.gif" alt="..." class="img-rounded project-pic">
+							<img src="/assets/img/sample_project_pic.gif" alt="..." class="img-rounded project-pic flat">
 							<h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion-4" href="#collapse-4">
-									<span class="project-title" data-toggle="tooltip" title="Click to read more descriptions">PROJECT WITH LARGE PHOTO</span>
+									<span class="project-title" data-toggle="tooltip" title="Click to read more descriptions">PROJECT WITH PHOTO</span>
 								</a>
 							</h4>
 						</div>
 						<div id="collapse-4" class="panel-collapse collapse out">
 							<div class="panel-body">
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 project-title-inner">
+									<span>PROJECT WITH PHOTO</span>
+								</div>
 								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-									<img src="/assets/img/sample_project_pic.gif" alt="..." class="img-rounded project-body-pic">
+									<img src="/assets/img/sample_project_pic.gif" alt="..." class="img-rounded project-body-pic flat">
 								</div>
 								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 							</div>
@@ -207,6 +238,7 @@
 					</div>
 	    		</div>
 	    	</div>
+	    	<!-- DEBUG ENDS -->
 	    </div>
 	</div>
  </div>

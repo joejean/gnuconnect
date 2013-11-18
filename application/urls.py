@@ -27,7 +27,10 @@ from application import views
 ##
 
 # Home page
-app.add_url_rule('/home', 'home', view_func=views.home)
+app.add_url_rule('/projects', 'projects', view_func=views.home)
+app.add_url_rule('/projects/<page>', 'projects', view_func=views.home)
+app.add_url_rule('/events', 'events', view_func=views.home)
+app.add_url_rule('/events/<page>', 'events', view_func=views.home)
 
 # Profile page
 app.add_url_rule('/profile', 'profile', view_func=views.profile)
