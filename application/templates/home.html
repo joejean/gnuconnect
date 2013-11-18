@@ -16,39 +16,31 @@
 	    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 container cont-menu squeeze">
 	    	<!-- Profile picture's menu group -->
 	    	<div class="col-xs-4 col-sm-12 col-md-12 col-lg-12 menu-profile squeeze">
-	    		<!-- Profile picture -->
-	    		<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 menu-me squeeze">
-	    			<a href="#">
-		    			<img src="/assets/img/sample_profile_pic.gif" alt="..." class="img-rounded home-pic">
-		    		</a>
-		    	</div>
-		    	<!-- Notifications' menu item -->
-		    	<div class="col-xs-11 col-sm-4 col-md-4 col-lg-4 menu-me squeeze">
-		    		<a href="#">
-			    		<div class="menu-item item-notifications bg-notification" data-toggle="tooltip" title="Some description goes here">
-			    			
-			    		</div>
-			    	</a>
-		    	</div>
+	    		<a href="#">
+	    			<img src="/assets/img/sample_profile_pic.gif" alt="..." class="img-rounded home-pic">
+	    		</a>
 	    	</div>
 	    	<div class="hidden-xs col-sm-4 col-md-4 col-lg-4 menu-separator "> </div>
 	    	<!-- Projects' menu group -->
 	    	<div class="col-xs-4 col-sm-12 col-md-12 col-lg-12 menu-projects">
-	    		<div class="col-xs-6 col-sm-8 col-md-8 col-lg-8 menu-me">
+	    		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 menu-header">
+	    			<span class=" txt-blue">Projects</span>
+	    		</div>
+	    		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 menu-me">
 	    			<a href="#">
 		    			<div class="menu-item item-me bg-project-me" data-toggle="tooltip" title="Some description goes here">
 		    			
 		    			</div>
 		    		</a>
 		    	</div>
-		    	<div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 menu-others">
+		    	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 menu-others">
 		    		<a href="#">
-			    		<div class="menu-item item-others bg-project-others-add" data-toggle="tooltip" title="Some description goes here">
+			    		<div class="menu-item item-others bg-project-recent" data-toggle="tooltip" title="Some description goes here">
 			    			
 			    		</div>
 			    	</a>
 			    	<a href="#">
-			    		<div class="menu-item item-others bg-project-others-search" data-toggle="tooltip" title="Some description goes here">
+			    		<div class="menu-item item-others bg-project-add" data-toggle="tooltip" title="Some description goes here">
 			    			
 			    		</div>
 			    	</a>
@@ -56,21 +48,24 @@
 	    	</div>
 	    	<!-- Events' menu group -->
 	    	<div class="col-xs-4 col-sm-12 col-md-12 col-lg-12 menu-events">
-	    		<div class="col-xs-6 col-sm-8 col-md-8 col-lg-8 menu-me">
+	    		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 menu-header">
+	    			<span class="txt-green">Events</span>
+	    		</div>
+	    		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 menu-me">
 	    			<a href="#">
 			    		<div class="menu-item item-me bg-event-me" data-toggle="tooltip" title="Some description goes here">
 			    			
 			    		</div>
 			    	</a>
 		    	</div>
-		    	<div class="col-xs-6 col-sm-4 col-md-4 col-lg-4  menu-others">
+		    	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6  menu-others">
 		    		<a href="#">
-			    		<div class="menu-item item-others bg-event-others-add" data-toggle="tooltip" title="Some description goes here">
+			    		<div class="menu-item item-others bg-event-recent" data-toggle="tooltip" title="Some description goes here">
 			    			
 			    		</div>
 			    	</a>
 			    	<a href="#">
-			    		<div class="menu-item item-others bg-event-others-search" data-toggle="tooltip" title="Some description goes here">
+			    		<div class="menu-item item-others bg-event-add" data-toggle="tooltip" title="Some description goes here">
 			    			
 			    		</div>
 			    	</a>
@@ -78,9 +73,7 @@
 	    	</div>
 	    </div>
 	    <!-- Home contents -->
-	    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 contents">
-	    	<!-- Triangle arrow -->
-	    	<div class="arrow-left hidden-xs"> </div>
+	    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 contents bg-clear">
 	    	<!-- Options and Search items -->
 	    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 container contents-head">
 		    	<div class="contents-top">
@@ -112,7 +105,7 @@
     		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contents-body squeeze container">
 	    		<div class="panel-group" id="accordion-1">
 					<div class="panel panel-default">
-						<div class="project-sidebar bg-project-others-add"> </div>
+						<div class="project-sidebar bg-project-recent"> </div>
 						<a href="#">
 							<div class="join-btn curve-corners onared pull-right" data-toggle="tooltip" title="Click to join this project"><i id="search-btn" class="glyphicon glyphicon-plus squeeze"> </i></div>
 						</a>						
@@ -139,7 +132,7 @@
 	    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contents-body squeeze container">
 	    		<div class="panel-group" id="accordion-2">
 					<div class="panel panel-default">
-						<div class="project-sidebar bg-project-others-add"> </div>
+						<div class="project-sidebar bg-project-recent"> </div>
 						<a href="#">
 							<div class="join-btn curve-corners onared pull-right" data-toggle="tooltip" title="Click to join this project"><i id="search-btn" class="glyphicon glyphicon-plus squeeze"> </i></div>
 						</a>						
@@ -166,7 +159,7 @@
 	    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contents-body squeeze container">
 	    		<div class="panel-group" id="accordion-3">
 					<div class="panel panel-default">
-						<div class="project-sidebar bg-project-others-add"> </div>
+						<div class="project-sidebar bg-project-recent"> </div>
 						<a href="#">
 							<div class="join-btn curve-corners onared pull-right" data-toggle="tooltip" title="Click to join this project"><i id="search-btn" class="glyphicon glyphicon-plus squeeze"> </i></div>
 						</a>						
@@ -191,7 +184,7 @@
     		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contents-body squeeze container">
 	    		<div class="panel-group" id="accordion-4">
 					<div class="panel panel-default">
-						<div class="project-sidebar bg-project-others-add"> </div>
+						<div class="project-sidebar bg-project-recent"> </div>
 						<a href="#">
 							<div class="join-btn curve-corners onared pull-right" data-toggle="tooltip" title="Click to join this project"><i id="search-btn" class="glyphicon glyphicon-plus squeeze"> </i></div>
 						</a>						
